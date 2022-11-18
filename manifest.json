@@ -1,0 +1,17 @@
+{
+  "name": "hide-padlock",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "hide padlock on gmail",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/mail/u/0/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
